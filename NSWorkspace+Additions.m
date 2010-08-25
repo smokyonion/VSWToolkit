@@ -65,7 +65,8 @@
 #else
 	[fm createDirectoryAtPath:[@"~/Library/LaunchAgents/" stringByExpandingTildeInPath] attributes:attrs]; //10.4, deprecated in 10.5
 #endif
-	[plist writeToFile:dest atomically:true];
+	[plist writeToFile:dest atomically:YES];
+	[plist release];
 }
 
 @end
