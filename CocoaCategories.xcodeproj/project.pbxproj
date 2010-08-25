@@ -14,6 +14,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BF9B60A41224B07A0027B070 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9B60A31224B07A0027B070 /* QuickLook.framework */; };
 		BF9B611E1224BE530027B070 /* NSDrawer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */; };
+		BF9B652B1224ECB40027B070 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B652A1224ECB40027B070 /* NSObject+Additions.m */; };
 		BFF07CBD12242534009A523F /* NSImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CBC12242534009A523F /* NSImage+Additions.m */; };
 		BFF07CC1122425F8009A523F /* NSUserDefaults+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CC0122425F8009A523F /* NSUserDefaults+Additions.m */; };
 		BFF07CC4122426C7009A523F /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CC3122426C7009A523F /* NSString+Additions.m */; };
@@ -35,6 +36,8 @@
 		BF9B60A31224B07A0027B070 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		BF9B611C1224BE530027B070 /* NSDrawer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDrawer+Additions.h"; sourceTree = "<group>"; };
 		BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDrawer+Additions.m"; sourceTree = "<group>"; };
+		BF9B65291224ECB40027B070 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		BF9B652A1224ECB40027B070 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		BFF07CBB12242534009A523F /* NSImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Additions.h"; sourceTree = "<group>"; };
 		BFF07CBC12242534009A523F /* NSImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Additions.m"; sourceTree = "<group>"; };
 		BFF07CBF122425F8009A523F /* NSUserDefaults+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Additions.h"; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				BFF07CC3122426C7009A523F /* NSString+Additions.m */,
 				BF9B611C1224BE530027B070 /* NSDrawer+Additions.h */,
 				BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */,
+				BF9B65291224ECB40027B070 /* NSObject+Additions.h */,
+				BF9B652A1224ECB40027B070 /* NSObject+Additions.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF9B60A31224B07A0027B070 /* QuickLook.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -107,7 +113,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				BF9B60A31224B07A0027B070 /* QuickLook.framework */,
 			);
 			name = CocoaCategories;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				BFF07CC1122425F8009A523F /* NSUserDefaults+Additions.m in Sources */,
 				BFF07CC4122426C7009A523F /* NSString+Additions.m in Sources */,
 				BF9B611E1224BE530027B070 /* NSDrawer+Additions.m in Sources */,
+				BF9B652B1224ECB40027B070 /* NSObject+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
