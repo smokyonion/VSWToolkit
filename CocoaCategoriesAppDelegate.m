@@ -7,6 +7,7 @@
 //
 
 #import "CocoaCategoriesAppDelegate.h"
+#import "SCToolkit.h"
 
 @implementation CocoaCategoriesAppDelegate
 
@@ -14,6 +15,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
+}
+
+- (IBAction)openSysPrefPane:(id)sender
+{
+	NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+	[ws openSystemPreference:kSCSystemPrefencesUniversalAccess];
 }
 
 @end

@@ -53,7 +53,7 @@
     
 	if(imageData) {
 #if MAC_OS_X_VERSION_MIN_REQUIRED > MAC_OS_X_VERSION_10_5		
-		imageRef = [self CGImageForProposedRect:NULL context:nil hints:nil]; //10.6;
+		imageRef = [self CGImageForProposedRect:NULL context:nil hints:nil]; //10.6
 #else
 		imageRef = [[NSBitmapImageRep imageRepWithData:imageData] CGImage]; //10.5
 #endif

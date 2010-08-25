@@ -14,4 +14,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)openSysPrefPane:(id)sender;
+
 @end
