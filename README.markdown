@@ -1,6 +1,7 @@
-== Description ==
+Description
+===========
 
-Customized Cocoa Class
+Cocoa Class Wrapper
 
 NSString, NSDrawer, NSImage, NSUserDefaults and more...
 
