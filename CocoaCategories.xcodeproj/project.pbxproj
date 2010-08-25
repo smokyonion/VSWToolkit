@@ -15,6 +15,7 @@
 		BF9B60A41224B07A0027B070 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9B60A31224B07A0027B070 /* QuickLook.framework */; };
 		BF9B611E1224BE530027B070 /* NSDrawer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */; };
 		BF9B652B1224ECB40027B070 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B652A1224ECB40027B070 /* NSObject+Additions.m */; };
+		BF9B653F1224F0B50027B070 /* SCToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9B653E1224F0B50027B070 /* SCToolkit.h */; };
 		BFF07CBD12242534009A523F /* NSImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CBC12242534009A523F /* NSImage+Additions.m */; };
 		BFF07CC1122425F8009A523F /* NSUserDefaults+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CC0122425F8009A523F /* NSUserDefaults+Additions.m */; };
 		BFF07CC4122426C7009A523F /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF07CC3122426C7009A523F /* NSString+Additions.m */; };
@@ -38,6 +39,9 @@
 		BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDrawer+Additions.m"; sourceTree = "<group>"; };
 		BF9B65291224ECB40027B070 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		BF9B652A1224ECB40027B070 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		BF9B65371224F0180027B070 /* SCToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCToolkit.framework; path = build/Debug/SCToolkit.framework; sourceTree = "<group>"; };
+		BF9B65381224F0180027B070 /* SCToolkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCToolkit-Info.plist"; sourceTree = "<group>"; };
+		BF9B653E1224F0B50027B070 /* SCToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCToolkit.h; sourceTree = "<group>"; };
 		BFF07CBB12242534009A523F /* NSImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Additions.h"; sourceTree = "<group>"; };
 		BFF07CBC12242534009A523F /* NSImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Additions.m"; sourceTree = "<group>"; };
 		BFF07CBF122425F8009A523F /* NSUserDefaults+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Additions.h"; sourceTree = "<group>"; };
@@ -53,6 +57,13 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				BF9B60A41224B07A0027B070 /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9B65351224F0180027B070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,7 @@
 				BF9B611D1224BE530027B070 /* NSDrawer+Additions.m */,
 				BF9B65291224ECB40027B070 /* NSObject+Additions.h */,
 				BF9B652A1224ECB40027B070 /* NSObject+Additions.m */,
+				BF9B653E1224F0B50027B070 /* SCToolkit.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -101,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* CocoaCategories.app */,
+				BF9B65371224F0180027B070 /* SCToolkit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +126,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				BF9B65381224F0180027B070 /* SCToolkit-Info.plist */,
 			);
 			name = CocoaCategories;
 			sourceTree = "<group>";
@@ -147,6 +161,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BF9B65321224F0180027B070 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9B653F1224F0B50027B070 /* SCToolkit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8D1107260486CEB800E47090 /* CocoaCategories */ = {
 			isa = PBXNativeTarget;
@@ -166,6 +191,24 @@
 			productReference = 8D1107320486CEB800E47090 /* CocoaCategories.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BF9B65361224F0180027B070 /* SCToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9B653B1224F0180027B070 /* Build configuration list for PBXNativeTarget "SCToolkit" */;
+			buildPhases = (
+				BF9B65321224F0180027B070 /* Headers */,
+				BF9B65331224F0180027B070 /* Resources */,
+				BF9B65341224F0180027B070 /* Sources */,
+				BF9B65351224F0180027B070 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCToolkit;
+			productName = SCToolkit;
+			productReference = BF9B65371224F0180027B070 /* SCToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* CocoaCategories */,
+				BF9B65361224F0180027B070 /* SCToolkit */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +234,13 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9B65331224F0180027B070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +258,13 @@
 				BFF07CC4122426C7009A523F /* NSString+Additions.m in Sources */,
 				BF9B611E1224BE530027B070 /* NSDrawer+Additions.m in Sources */,
 				BF9B652B1224ECB40027B070 /* NSObject+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9B65341224F0180027B070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +290,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF9B65391224F0180027B070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SCToolkit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SCToolkit;
+			};
+			name = Debug;
+		};
+		BF9B653A1224F0180027B070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SCToolkit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SCToolkit;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +404,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF9B653B1224F0180027B070 /* Build configuration list for PBXNativeTarget "SCToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9B65391224F0180027B070 /* Debug */,
+				BF9B653A1224F0180027B070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CocoaCategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
