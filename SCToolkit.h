@@ -11,5 +11,5 @@
 #import "NSObject+Additions.h"
 #import "NSDrawer+Additions.h"
 #import "NSString+Additions.h"
-#import "NSUserDefaults+Additions.h"
 #import "NSWorkspace+Additions.h"
+#import "NSUserDefaults+Additions.h"
