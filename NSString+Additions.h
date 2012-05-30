@@ -45,5 +45,8 @@
  * Whether or not this string is empty or contains a space.
  */
 - (BOOL)isEmptyOrContainsSpace;
-
+/**
+ * Whether or not string contains passed string or not
+ */
+ - (BOOL)containsString:(NSString)aString;
 @end
