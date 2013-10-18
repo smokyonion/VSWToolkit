@@ -29,10 +29,10 @@
 {
     NSUInteger count = [self count];
     NSUInteger length = count - index;
-    //http://stackoverflow.com/questions/8592289/arc-the-meaning-of-unsafe-unretained
-    id __unsafe_unretained objects[count];
     
     if ([self vsw_containsIndex:index]) {
+        //http://stackoverflow.com/questions/8592289/arc-the-meaning-of-unsafe-unretained
+        id __unsafe_unretained objects[length];
         [self getObjects:objects range:NSMakeRange(index, length)];
         return [NSArray arrayWithObjects:&objects[index] count:length];
     }
