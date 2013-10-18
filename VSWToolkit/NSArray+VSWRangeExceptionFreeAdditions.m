@@ -17,6 +17,11 @@
 
 - (instancetype)vsw_firstObject
 {
+//#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
+//    return [self firstObject];
+//#elif MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_6
+//    return [self firstObject];
+//#endif
     return [self vsw_objectAtIndex:0];
 }
 

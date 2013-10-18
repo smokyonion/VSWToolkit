@@ -14,4 +14,5 @@
 
 
 #if TARGET_OS_MAC && !TARGET_OS_IPHONE // OS X only
+#import "NSImage+VSWAppKitAdditions.h"
 #endif

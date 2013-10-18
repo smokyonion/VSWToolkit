@@ -30,6 +30,8 @@
 		31AD4E8C1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
 		31AD4E8D1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
 		31AD4E8F1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E8E1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m */; };
+		31AD4E921811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E901811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.h */; };
+		31AD4E931811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E911811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+VSWSortingAdditions.h"; sourceTree = "<group>"; };
 		31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+VSWSortingAdditions.m"; sourceTree = "<group>"; };
 		31AD4E8E1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSWNSArrayExceptionFreeTest.m; sourceTree = "<group>"; };
+		31AD4E901811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+VSWAppKitAdditions.h"; sourceTree = "<group>"; };
+		31AD4E911811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+VSWAppKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +271,8 @@
 		31AD4E5818119E6100A3C5FA /* AppKit Support */ = {
 			isa = PBXGroup;
 			children = (
+				31AD4E901811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.h */,
+				31AD4E911811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.m */,
 			);
 			name = "AppKit Support";
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31AD4E5B18119EDB00A3C5FA /* VSWToolkit.h in Headers */,
+				31AD4E921811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.h in Headers */,
 				31AD4E5E18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h in Headers */,
 				31AD4E8A1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */,
 			);
@@ -500,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AD4E931811C2BF00A3C5FA /* NSImage+VSWAppKitAdditions.m in Sources */,
 				31AD4E8C1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */,
 				31AD4E6018119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m in Sources */,
 			);
@@ -848,6 +856,7 @@
 				31AD4E4F18119CE300A3C5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31AD4E5318119CE300A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkit-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -856,6 +865,7 @@
 				31AD4E5118119CE300A3C5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
