@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		31AD4E0218119B6100A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E0118119B6100A3C5FA /* Cocoa.framework */; };
 		31AD4E0C18119B6100A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E0A18119B6100A3C5FA /* InfoPlist.strings */; };
-		31AD4E1018119B6100A3C5FA /* VSWToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E0F18119B6100A3C5FA /* VSWToolkit.m */; };
 		31AD4E1718119B6100A3C5FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E1618119B6100A3C5FA /* XCTest.framework */; };
 		31AD4E1818119B6100A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E0118119B6100A3C5FA /* Cocoa.framework */; };
 		31AD4E1B18119B6100A3C5FA /* VSWToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */; };
 		31AD4E2118119B6100A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E1F18119B6100A3C5FA /* InfoPlist.strings */; };
 		31AD4E2318119B6100A3C5FA /* VSWToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */; };
+		31AD4E3218119CE300A3C5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3118119CE300A3C5FA /* Foundation.framework */; };
+		31AD4E3F18119CE300A3C5FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E1618119B6100A3C5FA /* XCTest.framework */; };
+		31AD4E4018119CE300A3C5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3118119CE300A3C5FA /* Foundation.framework */; };
+		31AD4E4218119CE300A3C5FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E4118119CE300A3C5FA /* UIKit.framework */; };
+		31AD4E4518119CE300A3C5FA /* libVSWToolkit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */; };
+		31AD4E4B18119CE300A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E4918119CE300A3C5FA /* InfoPlist.strings */; };
+		31AD4E4D18119CE300A3C5FA /* VSWToolkit_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E4C18119CE300A3C5FA /* VSWToolkit_iOSTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +31,26 @@
 			remoteGlobalIDString = 31AD4DFD18119B6100A3C5FA;
 			remoteInfo = VSWToolkit;
 		};
+		31AD4E4318119CE300A3C5FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AD4DF518119B6100A3C5FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31AD4E2F18119CE300A3C5FA;
+			remoteInfo = "VSWToolkit-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31AD4E2E18119CE300A3C5FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSWToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,12 +62,18 @@
 		31AD4E0B18119B6100A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31AD4E0D18119B6100A3C5FA /* VSWToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VSWToolkit-Prefix.pch"; sourceTree = "<group>"; };
 		31AD4E0E18119B6100A3C5FA /* VSWToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSWToolkit.h; sourceTree = "<group>"; };
-		31AD4E0F18119B6100A3C5FA /* VSWToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSWToolkit.m; sourceTree = "<group>"; };
 		31AD4E1518119B6100A3C5FA /* VSWToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSWToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AD4E1618119B6100A3C5FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		31AD4E1E18119B6100A3C5FA /* VSWToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSWToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		31AD4E2018119B6100A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSWToolkitTests.m; sourceTree = "<group>"; };
+		31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVSWToolkit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AD4E3118119CE300A3C5FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31AD4E3E18119CE300A3C5FA /* VSWToolkit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VSWToolkit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AD4E4118119CE300A3C5FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		31AD4E4818119CE300A3C5FA /* VSWToolkit-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSWToolkit-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		31AD4E4A18119CE300A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31AD4E4C18119CE300A3C5FA /* VSWToolkit_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VSWToolkit_iOSTests.m; path = "../VSWToolkit-iOSTests/VSWToolkit_iOSTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +95,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31AD4E2D18119CE300A3C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4E3218119CE300A3C5FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4E3B18119CE300A3C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4E3F18119CE300A3C5FA /* XCTest.framework in Frameworks */,
+				31AD4E4218119CE300A3C5FA /* UIKit.framework in Frameworks */,
+				31AD4E4018119CE300A3C5FA /* Foundation.framework in Frameworks */,
+				31AD4E4518119CE300A3C5FA /* libVSWToolkit-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +132,8 @@
 			children = (
 				31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */,
 				31AD4E1518119B6100A3C5FA /* VSWToolkitTests.xctest */,
+				31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */,
+				31AD4E3E18119CE300A3C5FA /* VSWToolkit-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +143,8 @@
 			children = (
 				31AD4E0118119B6100A3C5FA /* Cocoa.framework */,
 				31AD4E1618119B6100A3C5FA /* XCTest.framework */,
+				31AD4E3118119CE300A3C5FA /* Foundation.framework */,
+				31AD4E4118119CE300A3C5FA /* UIKit.framework */,
 				31AD4E0318119B6100A3C5FA /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -110,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				31AD4E0E18119B6100A3C5FA /* VSWToolkit.h */,
-				31AD4E0F18119B6100A3C5FA /* VSWToolkit.m */,
 				31AD4E0818119B6100A3C5FA /* Supporting Files */,
 			);
 			path = VSWToolkit;
@@ -129,8 +182,8 @@
 		31AD4E1C18119B6100A3C5FA /* VSWToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */,
-				31AD4E1D18119B6100A3C5FA /* Supporting Files */,
+				31AD4E5418119D5D00A3C5FA /* Mac */,
+				31AD4E5518119D6600A3C5FA /* iOS */,
 			);
 			path = VSWToolkitTests;
 			sourceTree = "<group>";
@@ -142,6 +195,34 @@
 				31AD4E1F18119B6100A3C5FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31AD4E4718119CE300A3C5FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E4818119CE300A3C5FA /* VSWToolkit-iOSTests-Info.plist */,
+				31AD4E4918119CE300A3C5FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			path = "../VSWToolkit-iOSTests";
+			sourceTree = "<group>";
+		};
+		31AD4E5418119D5D00A3C5FA /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */,
+				31AD4E1D18119B6100A3C5FA /* Supporting Files */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		31AD4E5518119D6600A3C5FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E4C18119CE300A3C5FA /* VSWToolkit_iOSTests.m */,
+				31AD4E4718119CE300A3C5FA /* Supporting Files */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +274,41 @@
 			productReference = 31AD4E1518119B6100A3C5FA /* VSWToolkitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		31AD4E2F18119CE300A3C5FA /* VSWToolkit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AD4E5218119CE300A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkit-iOS" */;
+			buildPhases = (
+				31AD4E2C18119CE300A3C5FA /* Sources */,
+				31AD4E2D18119CE300A3C5FA /* Frameworks */,
+				31AD4E2E18119CE300A3C5FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VSWToolkit-iOS";
+			productName = "VSWToolkit-iOS";
+			productReference = 31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		31AD4E3D18119CE300A3C5FA /* VSWToolkit-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AD4E5318119CE300A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkit-iOSTests" */;
+			buildPhases = (
+				31AD4E3A18119CE300A3C5FA /* Sources */,
+				31AD4E3B18119CE300A3C5FA /* Frameworks */,
+				31AD4E3C18119CE300A3C5FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31AD4E4418119CE300A3C5FA /* PBXTargetDependency */,
+			);
+			name = "VSWToolkit-iOSTests";
+			productName = "VSWToolkit-iOSTests";
+			productReference = 31AD4E3E18119CE300A3C5FA /* VSWToolkit-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +319,9 @@
 				ORGANIZATIONNAME = "Vincent Wayne";
 				TargetAttributes = {
 					31AD4E1418119B6100A3C5FA = {
+						TestTargetID = 31AD4DFD18119B6100A3C5FA;
+					};
+					31AD4E3D18119CE300A3C5FA = {
 						TestTargetID = 31AD4DFD18119B6100A3C5FA;
 					};
 				};
@@ -221,6 +340,8 @@
 			targets = (
 				31AD4DFD18119B6100A3C5FA /* VSWToolkit */,
 				31AD4E1418119B6100A3C5FA /* VSWToolkitTests */,
+				31AD4E2F18119CE300A3C5FA /* VSWToolkit-iOS */,
+				31AD4E3D18119CE300A3C5FA /* VSWToolkit-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31AD4E3C18119CE300A3C5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4E4B18119CE300A3C5FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,7 +378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AD4E1018119B6100A3C5FA /* VSWToolkit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +389,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31AD4E2C18119CE300A3C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4E3A18119CE300A3C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4E4D18119CE300A3C5FA /* VSWToolkit_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -268,6 +411,11 @@
 			isa = PBXTargetDependency;
 			target = 31AD4DFD18119B6100A3C5FA /* VSWToolkit */;
 			targetProxy = 31AD4E1918119B6100A3C5FA /* PBXContainerItemProxy */;
+		};
+		31AD4E4418119CE300A3C5FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31AD4E2F18119CE300A3C5FA /* VSWToolkit-iOS */;
+			targetProxy = 31AD4E4318119CE300A3C5FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -284,6 +432,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				31AD4E2018119B6100A3C5FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31AD4E4918119CE300A3C5FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AD4E4A18119CE300A3C5FA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -369,6 +525,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSWToolkit/VSWToolkit-Prefix.pch";
 				INFOPLIST_FILE = "VSWToolkit/VSWToolkit-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -384,6 +542,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSWToolkit/VSWToolkit-Prefix.pch";
 				INFOPLIST_FILE = "VSWToolkit/VSWToolkit-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -429,6 +589,92 @@
 			};
 			name = Release;
 		};
+		31AD4E4E18119CE300A3C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/VSWToolkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31AD4E4F18119CE300A3C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/VSWToolkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31AD4E5018119CE300A3C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VSWToolkit-iOSTests/VSWToolkit-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31AD4E5118119CE300A3C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-iOS-Prefix.pch";
+				INFOPLIST_FILE = "VSWToolkit-iOSTests/VSWToolkit-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,12 +694,30 @@
 				31AD4E2818119B6100A3C5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31AD4E2918119B6100A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31AD4E2A18119B6100A3C5FA /* Debug */,
 				31AD4E2B18119B6100A3C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31AD4E5218119CE300A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AD4E4E18119CE300A3C5FA /* Debug */,
+				31AD4E4F18119CE300A3C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31AD4E5318119CE300A3C5FA /* Build configuration list for PBXNativeTarget "VSWToolkit-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AD4E5018119CE300A3C5FA /* Debug */,
+				31AD4E5118119CE300A3C5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
