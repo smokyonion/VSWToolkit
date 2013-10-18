@@ -2,7 +2,7 @@
 //  NSArray+VSWRangeExceptionFreeAdditions.h
 //  VSWToolkit
 //
-//  Created by Vincent Wang on 10/18/13.
+//  Created by Vincent Wayne on 10/18/13.
 //  Copyright (c) 2013 Vincent Wayne. All rights reserved.
 //
 
@@ -18,7 +18,7 @@
  *
  *  @return The first object in the array. If the array is empty, returns nil.
  */
-- (instancetype)vsw_firstObject;
+- (instancetype)vsw_firstObject __deprecated_msg("Use -firstObject instead");
 
 /**
  *  Returns the object located at the specified index. This method provides the same functionality as objectAtIndex: but is NSRangeException free.
@@ -26,7 +26,7 @@
  *  @param index the index of the object
  *
  *  @return The object located at index.
- If index is beyond the end of the array (that is, if index is greater than or equal to the value returned by count), returns nil.
+            If index is beyond the end of the array (that is, if index is greater than or equal to the value returned by count), returns nil.
  */
 - (instancetype)vsw_objectAtIndex:(NSUInteger)index;
 
