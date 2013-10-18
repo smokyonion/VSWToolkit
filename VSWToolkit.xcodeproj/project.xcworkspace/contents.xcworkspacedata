@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:VWSToolkit.xcodeproj">
+      location = "self:VSWToolkit.xcodeproj">
    </FileRef>
 </Workspace>

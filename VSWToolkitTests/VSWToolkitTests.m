@@ -1,6 +1,6 @@
 //
-//  VWSToolkitTests.m
-//  VWSToolkitTests
+//  VSWToolkitTests.m
+//  VSWToolkitTests
 //
 //  Created by Vincent Wang on 10/18/13.
 //  Copyright (c) 2013 Vincent Wayne. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface VWSToolkitTests : XCTestCase
+@interface VSWToolkitTests : XCTestCase
 
 @end
 
-@implementation VWSToolkitTests
+@implementation VSWToolkitTests
 
 - (void)setUp
 {

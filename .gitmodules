@@ -1,0 +1,3 @@
+[submodule "VSWToolkit/external/xcconfigs"]
+	path = VSWToolkit/external/xcconfigs
+	url = https://github.com/jspahrsummers/xcconfigs.git
