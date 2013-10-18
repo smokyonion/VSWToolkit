@@ -12,7 +12,6 @@
 		31AD4E1818119B6100A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E0118119B6100A3C5FA /* Cocoa.framework */; };
 		31AD4E1B18119B6100A3C5FA /* VSWToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */; };
 		31AD4E2118119B6100A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E1F18119B6100A3C5FA /* InfoPlist.strings */; };
-		31AD4E2318119B6100A3C5FA /* VSWToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */; };
 		31AD4E3218119CE300A3C5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3118119CE300A3C5FA /* Foundation.framework */; };
 		31AD4E3F18119CE300A3C5FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E1618119B6100A3C5FA /* XCTest.framework */; };
 		31AD4E4018119CE300A3C5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3118119CE300A3C5FA /* Foundation.framework */; };
@@ -30,6 +29,7 @@
 		31AD4E8B1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31AD4E8C1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
 		31AD4E8D1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
+		31AD4E8F1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E8E1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		31AD4E1618119B6100A3C5FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		31AD4E1E18119B6100A3C5FA /* VSWToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSWToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		31AD4E2018119B6100A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSWToolkitTests.m; sourceTree = "<group>"; };
 		31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVSWToolkit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AD4E3118119CE300A3C5FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31AD4E3E18119CE300A3C5FA /* VSWToolkit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VSWToolkit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +90,7 @@
 		31AD4E771811A18D00A3C5FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+VSWSortingAdditions.h"; sourceTree = "<group>"; };
 		31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+VSWSortingAdditions.m"; sourceTree = "<group>"; };
+		31AD4E8E1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSWNSArrayExceptionFreeTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,7 +231,7 @@
 		31AD4E5418119D5D00A3C5FA /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				31AD4E2218119B6100A3C5FA /* VSWToolkitTests.m */,
+				31AD4E8E1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m */,
 				31AD4E1D18119B6100A3C5FA /* Supporting Files */,
 			);
 			name = Mac;
@@ -509,7 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AD4E2318119B6100A3C5FA /* VSWToolkitTests.m in Sources */,
+				31AD4E8F1811AA6900A3C5FA /* VSWNSArrayExceptionFreeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

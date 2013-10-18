@@ -18,7 +18,7 @@
  *
  *  @return The first object in the array. If the array is empty, returns nil.
  */
-- (instancetype)vsw_firstObject NS_DEPRECATED(10_0, 10_6, 2_0, 4_0, "Use -firstObject instead");
+- (id)vsw_firstObject NS_DEPRECATED(10_0, 10_6, 2_0, 4_0); // @"Use -firstObject instead"
 
 /**
  *  Returns the object located at the specified index. This method provides the same functionality as objectAtIndex: but is NSRangeException free.
@@ -28,7 +28,7 @@
  *  @return The object located at index.
             If index is beyond the end of the array (that is, if index is greater than or equal to the value returned by count), returns nil.
  */
-- (instancetype)vsw_objectAtIndex:(NSUInteger)index;
+- (id)vsw_objectAtIndex:(NSUInteger)index;
 
 - (NSArray *)vsw_subarrayFromIndex:(NSUInteger)index;
 
