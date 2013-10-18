@@ -10,7 +10,6 @@
 #import <XCTest/XCTest.h>
 
 @interface VSWNSArrayExceptionFreeTest : XCTestCase
-
 @end
 
 @implementation VSWNSArrayExceptionFreeTest
@@ -29,9 +28,25 @@
 
 - (void)testOutOfBoundsIndex
 {
-    NSArray *cats = @[@"Cheeta", @"Tiger", @"Lion", @"Meow"];
+    NSArray *cats = @[@"Meow", @"Cheeta", @"Tiger", @"Lion"];
     NSString *cat = [cats vsw_objectAtIndex:4]; // should not crash and return nil
     XCTAssertNil(cat, @"there should be no cats");
 }
+
+- (void)testSubArrayAtIndex
+{
+    NSArray *cats = @[@"Meow", @"Cheeta", @"Tiger", @"Lion"];
+    NSArray *bigCats = [cats vsw_subarrayFromIndex:1];
+    XCTAssertNotNil(bigCats, @"there should be big cats");
+    XCTAssert((bigCats.count == 3), @"there should be 3 big cats but you have %ld.", bigCats.count);
+}
+
+- (void)testSubArrayAtIndexOutOfBounds
+{
+    NSArray *cats = @[@"Meow", @"Cheeta", @"Tiger", @"Lion"];
+    NSArray *bigCats = [cats vsw_subarrayFromIndex:4];
+    XCTAssertNil(bigCats, @"there should be no big cats");
+}
+
 
 @end
