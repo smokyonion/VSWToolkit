@@ -18,7 +18,7 @@
  *
  *  @return The first object in the array. If the array is empty, returns nil.
  */
-- (instancetype)vsw_firstObject __deprecated_msg("Use -firstObject instead");
+- (instancetype)vsw_firstObject NS_DEPRECATED(10_0, 10_6, 2_0, 4_0, "Use -firstObject instead");
 
 /**
  *  Returns the object located at the specified index. This method provides the same functionality as objectAtIndex: but is NSRangeException free.
