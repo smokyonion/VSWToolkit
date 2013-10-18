@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31AD4DC91811998B00A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DC81811998B00A3C5FA /* Cocoa.framework */; };
+		31AD4DD31811998B00A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4DD11811998B00A3C5FA /* InfoPlist.strings */; };
+		31AD4DD71811998B00A3C5FA /* VWSToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4DD61811998B00A3C5FA /* VWSToolkit.m */; };
+		31AD4DDE1811998B00A3C5FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DDD1811998B00A3C5FA /* XCTest.framework */; };
+		31AD4DDF1811998B00A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DC81811998B00A3C5FA /* Cocoa.framework */; };
+		31AD4DE21811998B00A3C5FA /* VWSToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DC51811998B00A3C5FA /* VWSToolkit.framework */; };
+		31AD4DE81811998B00A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4DE61811998B00A3C5FA /* InfoPlist.strings */; };
+		31AD4DEA1811998B00A3C5FA /* VWSToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4DE91811998B00A3C5FA /* VWSToolkitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31AD4DE01811998B00A3C5FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AD4DBC1811998B00A3C5FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31AD4DC41811998B00A3C5FA;
+			remoteInfo = VWSToolkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31AD4DC51811998B00A3C5FA /* VWSToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VWSToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AD4DC81811998B00A3C5FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		31AD4DCB1811998B00A3C5FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31AD4DCC1811998B00A3C5FA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		31AD4DCD1811998B00A3C5FA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		31AD4DD01811998B00A3C5FA /* VWSToolkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VWSToolkit-Info.plist"; sourceTree = "<group>"; };
+		31AD4DD21811998B00A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31AD4DD41811998B00A3C5FA /* VWSToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VWSToolkit-Prefix.pch"; sourceTree = "<group>"; };
+		31AD4DD51811998B00A3C5FA /* VWSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWSToolkit.h; sourceTree = "<group>"; };
+		31AD4DD61811998B00A3C5FA /* VWSToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWSToolkit.m; sourceTree = "<group>"; };
+		31AD4DDC1811998B00A3C5FA /* VWSToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWSToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AD4DDD1811998B00A3C5FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		31AD4DE51811998B00A3C5FA /* VWSToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VWSToolkitTests-Info.plist"; sourceTree = "<group>"; };
+		31AD4DE71811998B00A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31AD4DE91811998B00A3C5FA /* VWSToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWSToolkitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31AD4DC11811998B00A3C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DC91811998B00A3C5FA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4DD91811998B00A3C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DE21811998B00A3C5FA /* VWSToolkit.framework in Frameworks */,
+				31AD4DDF1811998B00A3C5FA /* Cocoa.framework in Frameworks */,
+				31AD4DDE1811998B00A3C5FA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31AD4DBB1811998B00A3C5FA = {
+			isa = PBXGroup;
+			children = (
+				31AD4DCE1811998B00A3C5FA /* VWSToolkit */,
+				31AD4DE31811998B00A3C5FA /* VWSToolkitTests */,
+				31AD4DC71811998B00A3C5FA /* Frameworks */,
+				31AD4DC61811998B00A3C5FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31AD4DC61811998B00A3C5FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DC51811998B00A3C5FA /* VWSToolkit.framework */,
+				31AD4DDC1811998B00A3C5FA /* VWSToolkitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31AD4DC71811998B00A3C5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DC81811998B00A3C5FA /* Cocoa.framework */,
+				31AD4DDD1811998B00A3C5FA /* XCTest.framework */,
+				31AD4DCA1811998B00A3C5FA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31AD4DCA1811998B00A3C5FA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DCB1811998B00A3C5FA /* Foundation.framework */,
+				31AD4DCC1811998B00A3C5FA /* CoreData.framework */,
+				31AD4DCD1811998B00A3C5FA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		31AD4DCE1811998B00A3C5FA /* VWSToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DD51811998B00A3C5FA /* VWSToolkit.h */,
+				31AD4DD61811998B00A3C5FA /* VWSToolkit.m */,
+				31AD4DCF1811998B00A3C5FA /* Supporting Files */,
+			);
+			path = VWSToolkit;
+			sourceTree = "<group>";
+		};
+		31AD4DCF1811998B00A3C5FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DD01811998B00A3C5FA /* VWSToolkit-Info.plist */,
+				31AD4DD11811998B00A3C5FA /* InfoPlist.strings */,
+				31AD4DD41811998B00A3C5FA /* VWSToolkit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31AD4DE31811998B00A3C5FA /* VWSToolkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DE91811998B00A3C5FA /* VWSToolkitTests.m */,
+				31AD4DE41811998B00A3C5FA /* Supporting Files */,
+			);
+			path = VWSToolkitTests;
+			sourceTree = "<group>";
+		};
+		31AD4DE41811998B00A3C5FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4DE51811998B00A3C5FA /* VWSToolkitTests-Info.plist */,
+				31AD4DE61811998B00A3C5FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31AD4DC21811998B00A3C5FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31AD4DC41811998B00A3C5FA /* VWSToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AD4DED1811998B00A3C5FA /* Build configuration list for PBXNativeTarget "VWSToolkit" */;
+			buildPhases = (
+				31AD4DC01811998B00A3C5FA /* Sources */,
+				31AD4DC11811998B00A3C5FA /* Frameworks */,
+				31AD4DC21811998B00A3C5FA /* Headers */,
+				31AD4DC31811998B00A3C5FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VWSToolkit;
+			productName = VWSToolkit;
+			productReference = 31AD4DC51811998B00A3C5FA /* VWSToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31AD4DDB1811998B00A3C5FA /* VWSToolkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AD4DF01811998B00A3C5FA /* Build configuration list for PBXNativeTarget "VWSToolkitTests" */;
+			buildPhases = (
+				31AD4DD81811998B00A3C5FA /* Sources */,
+				31AD4DD91811998B00A3C5FA /* Frameworks */,
+				31AD4DDA1811998B00A3C5FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31AD4DE11811998B00A3C5FA /* PBXTargetDependency */,
+			);
+			name = VWSToolkitTests;
+			productName = VWSToolkitTests;
+			productReference = 31AD4DDC1811998B00A3C5FA /* VWSToolkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31AD4DBC1811998B00A3C5FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Vincent Wayne";
+				TargetAttributes = {
+					31AD4DDB1811998B00A3C5FA = {
+						TestTargetID = 31AD4DC41811998B00A3C5FA;
+					};
+				};
+			};
+			buildConfigurationList = 31AD4DBF1811998B00A3C5FA /* Build configuration list for PBXProject "VWSToolkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 31AD4DBB1811998B00A3C5FA;
+			productRefGroup = 31AD4DC61811998B00A3C5FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31AD4DC41811998B00A3C5FA /* VWSToolkit */,
+				31AD4DDB1811998B00A3C5FA /* VWSToolkitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31AD4DC31811998B00A3C5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DD31811998B00A3C5FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4DDA1811998B00A3C5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DE81811998B00A3C5FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31AD4DC01811998B00A3C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DD71811998B00A3C5FA /* VWSToolkit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4DD81811998B00A3C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4DEA1811998B00A3C5FA /* VWSToolkitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31AD4DE11811998B00A3C5FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31AD4DC41811998B00A3C5FA /* VWSToolkit */;
+			targetProxy = 31AD4DE01811998B00A3C5FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31AD4DD11811998B00A3C5FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AD4DD21811998B00A3C5FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31AD4DE61811998B00A3C5FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AD4DE71811998B00A3C5FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31AD4DEB1811998B00A3C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		31AD4DEC1811998B00A3C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		31AD4DEE1811998B00A3C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VWSToolkit/VWSToolkit-Prefix.pch";
+				INFOPLIST_FILE = "VWSToolkit/VWSToolkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		31AD4DEF1811998B00A3C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VWSToolkit/VWSToolkit-Prefix.pch";
+				INFOPLIST_FILE = "VWSToolkit/VWSToolkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		31AD4DF11811998B00A3C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VWSToolkit.framework/Versions/A/VWSToolkit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VWSToolkit/VWSToolkit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VWSToolkitTests/VWSToolkitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31AD4DF21811998B00A3C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VWSToolkit.framework/Versions/A/VWSToolkit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VWSToolkit/VWSToolkit-Prefix.pch";
+				INFOPLIST_FILE = "VWSToolkitTests/VWSToolkitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31AD4DBF1811998B00A3C5FA /* Build configuration list for PBXProject "VWSToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AD4DEB1811998B00A3C5FA /* Debug */,
+				31AD4DEC1811998B00A3C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31AD4DED1811998B00A3C5FA /* Build configuration list for PBXNativeTarget "VWSToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AD4DEE1811998B00A3C5FA /* Debug */,
+				31AD4DEF1811998B00A3C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31AD4DF01811998B00A3C5FA /* Build configuration list for PBXNativeTarget "VWSToolkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AD4DF11811998B00A3C5FA /* Debug */,
+				31AD4DF21811998B00A3C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31AD4DBC1811998B00A3C5FA /* Project object */;
+}
