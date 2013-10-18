@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		31AD4E0218119B6100A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E0118119B6100A3C5FA /* Cocoa.framework */; };
-		31AD4E0C18119B6100A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E0A18119B6100A3C5FA /* InfoPlist.strings */; };
 		31AD4E1718119B6100A3C5FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E1618119B6100A3C5FA /* XCTest.framework */; };
 		31AD4E1818119B6100A3C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E0118119B6100A3C5FA /* Cocoa.framework */; };
 		31AD4E1B18119B6100A3C5FA /* VSWToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */; };
@@ -21,6 +20,16 @@
 		31AD4E4518119CE300A3C5FA /* libVSWToolkit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD4E3018119CE300A3C5FA /* libVSWToolkit-iOS.a */; };
 		31AD4E4B18119CE300A3C5FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31AD4E4918119CE300A3C5FA /* InfoPlist.strings */; };
 		31AD4E4D18119CE300A3C5FA /* VSWToolkit_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E4C18119CE300A3C5FA /* VSWToolkit_iOSTests.m */; };
+		31AD4E5A18119ED800A3C5FA /* VSWToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E0E18119B6100A3C5FA /* VSWToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E5B18119EDB00A3C5FA /* VSWToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E0E18119B6100A3C5FA /* VSWToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E5E18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E5C18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E5F18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E5C18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E6018119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E5D18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m */; };
+		31AD4E6118119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E5D18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m */; };
+		31AD4E8A1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E8B1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31AD4E8C1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
+		31AD4E8D1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +48,6 @@
 			remoteInfo = "VSWToolkit-iOS";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		31AD4E2E18119CE300A3C5FA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31AD4DFE18119B6100A3C5FA /* VSWToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSWToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +71,26 @@
 		31AD4E4818119CE300A3C5FA /* VSWToolkit-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSWToolkit-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		31AD4E4A18119CE300A3C5FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31AD4E4C18119CE300A3C5FA /* VSWToolkit_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VSWToolkit_iOSTests.m; path = "../VSWToolkit-iOSTests/VSWToolkit_iOSTests.m"; sourceTree = "<group>"; };
+		31AD4E5C18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+VSWRangeExceptionFreeAdditions.h"; sourceTree = "<group>"; };
+		31AD4E5D18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+VSWRangeExceptionFreeAdditions.m"; sourceTree = "<group>"; };
+		31AD4E641811A18D00A3C5FA /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		31AD4E661811A18D00A3C5FA /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		31AD4E671811A18D00A3C5FA /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		31AD4E681811A18D00A3C5FA /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		31AD4E691811A18D00A3C5FA /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		31AD4E6B1811A18D00A3C5FA /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		31AD4E6C1811A18D00A3C5FA /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		31AD4E6E1811A18D00A3C5FA /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		31AD4E6F1811A18D00A3C5FA /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		31AD4E701811A18D00A3C5FA /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		31AD4E721811A18D00A3C5FA /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		31AD4E731811A18D00A3C5FA /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		31AD4E741811A18D00A3C5FA /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		31AD4E751811A18D00A3C5FA /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		31AD4E761811A18D00A3C5FA /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		31AD4E771811A18D00A3C5FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+VSWSortingAdditions.h"; sourceTree = "<group>"; };
+		31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+VSWSortingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +140,7 @@
 				31AD4E0718119B6100A3C5FA /* VSWToolkit */,
 				31AD4E1C18119B6100A3C5FA /* VSWToolkitTests */,
 				31AD4E0018119B6100A3C5FA /* Frameworks */,
+				31AD4E621811A18D00A3C5FA /* Configuration */,
 				31AD4DFF18119B6100A3C5FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				31AD4E0E18119B6100A3C5FA /* VSWToolkit.h */,
+				31AD4E5618119E4F00A3C5FA /* Foundation Support */,
+				31AD4E5818119E6100A3C5FA /* AppKit Support */,
+				31AD4E5718119E5A00A3C5FA /* UIKit Support */,
 				31AD4E0818119B6100A3C5FA /* Supporting Files */,
 			);
 			path = VSWToolkit;
@@ -225,6 +246,95 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		31AD4E5618119E4F00A3C5FA /* Foundation Support */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E5C18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h */,
+				31AD4E5D18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m */,
+				31AD4E881811A29200A3C5FA /* NSArray+VSWSortingAdditions.h */,
+				31AD4E891811A29200A3C5FA /* NSArray+VSWSortingAdditions.m */,
+			);
+			name = "Foundation Support";
+			sourceTree = "<group>";
+		};
+		31AD4E5718119E5A00A3C5FA /* UIKit Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UIKit Support";
+			sourceTree = "<group>";
+		};
+		31AD4E5818119E6100A3C5FA /* AppKit Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "AppKit Support";
+			sourceTree = "<group>";
+		};
+		31AD4E621811A18D00A3C5FA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E631811A18D00A3C5FA /* Base */,
+				31AD4E6D1811A18D00A3C5FA /* iOS */,
+				31AD4E711811A18D00A3C5FA /* Mac OS X */,
+				31AD4E771811A18D00A3C5FA /* README.md */,
+			);
+			name = Configuration;
+			path = VSWToolkit/external/xcconfigs;
+			sourceTree = "<group>";
+		};
+		31AD4E631811A18D00A3C5FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E641811A18D00A3C5FA /* Common.xcconfig */,
+				31AD4E651811A18D00A3C5FA /* Configurations */,
+				31AD4E6A1811A18D00A3C5FA /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		31AD4E651811A18D00A3C5FA /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E661811A18D00A3C5FA /* Debug.xcconfig */,
+				31AD4E671811A18D00A3C5FA /* Profile.xcconfig */,
+				31AD4E681811A18D00A3C5FA /* Release.xcconfig */,
+				31AD4E691811A18D00A3C5FA /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		31AD4E6A1811A18D00A3C5FA /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E6B1811A18D00A3C5FA /* Application.xcconfig */,
+				31AD4E6C1811A18D00A3C5FA /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		31AD4E6D1811A18D00A3C5FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E6E1811A18D00A3C5FA /* iOS-Application.xcconfig */,
+				31AD4E6F1811A18D00A3C5FA /* iOS-Base.xcconfig */,
+				31AD4E701811A18D00A3C5FA /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		31AD4E711811A18D00A3C5FA /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				31AD4E721811A18D00A3C5FA /* Mac-Application.xcconfig */,
+				31AD4E731811A18D00A3C5FA /* Mac-Base.xcconfig */,
+				31AD4E741811A18D00A3C5FA /* Mac-DynamicLibrary.xcconfig */,
+				31AD4E751811A18D00A3C5FA /* Mac-Framework.xcconfig */,
+				31AD4E761811A18D00A3C5FA /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -232,6 +342,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AD4E5B18119EDB00A3C5FA /* VSWToolkit.h in Headers */,
+				31AD4E5E18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h in Headers */,
+				31AD4E8A1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AD4E5918119ED000A3C5FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD4E5A18119ED800A3C5FA /* VSWToolkit.h in Headers */,
+				31AD4E5F18119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.h in Headers */,
+				31AD4E8B1811A29200A3C5FA /* NSArray+VSWSortingAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +403,7 @@
 			buildPhases = (
 				31AD4E2C18119CE300A3C5FA /* Sources */,
 				31AD4E2D18119CE300A3C5FA /* Frameworks */,
-				31AD4E2E18119CE300A3C5FA /* CopyFiles */,
+				31AD4E5918119ED000A3C5FA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -351,7 +474,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AD4E0C18119B6100A3C5FA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +500,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AD4E8C1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */,
+				31AD4E6018119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +517,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AD4E8D1811A29200A3C5FA /* NSArray+VSWSortingAdditions.m in Sources */,
+				31AD4E6118119F9400A3C5FA /* NSArray+VSWRangeExceptionFreeAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +575,7 @@
 /* Begin XCBuildConfiguration section */
 		31AD4E2418119B6100A3C5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E661811A18D00A3C5FA /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -486,6 +613,7 @@
 		};
 		31AD4E2518119B6100A3C5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E681811A18D00A3C5FA /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -517,6 +645,7 @@
 		};
 		31AD4E2718119B6100A3C5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E751811A18D00A3C5FA /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -534,6 +663,7 @@
 		};
 		31AD4E2818119B6100A3C5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E751811A18D00A3C5FA /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -551,6 +681,7 @@
 		};
 		31AD4E2A18119B6100A3C5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E721811A18D00A3C5FA /* Mac-Application.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -573,6 +704,7 @@
 		};
 		31AD4E2B18119B6100A3C5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E721811A18D00A3C5FA /* Mac-Application.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -591,12 +723,13 @@
 		};
 		31AD4E4E18119CE300A3C5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E701811A18D00A3C5FA /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/VSWToolkit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-Prefix.pch";
+				GCC_PREFIX_HEADER = "VSWToolkit/VSWToolkit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -611,12 +744,13 @@
 		};
 		31AD4E4F18119CE300A3C5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E701811A18D00A3C5FA /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/VSWToolkit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VSWToolkit-iOS/VSWToolkit-Prefix.pch";
+				GCC_PREFIX_HEADER = "VSWToolkit/VSWToolkit-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,6 +762,7 @@
 		};
 		31AD4E5018119CE300A3C5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E6E1811A18D00A3C5FA /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";
@@ -654,6 +789,7 @@
 		};
 		31AD4E5118119CE300A3C5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AD4E6E1811A18D00A3C5FA /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSWToolkit.framework/Versions/A/VSWToolkit";

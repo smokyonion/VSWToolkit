@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 Vincent Wayne. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSArray+VSWRangeExceptionFreeAdditions.h"
+#import "NSArray+VSWSortingAdditions.h"
 
-@interface VSWToolkit : NSObject
+#if TARGET_OS_IPHONE // iOS only
+#endif
 
-@end
+
+#if TARGET_OS_MAC && !TARGET_OS_IPHONE // OS X only
+#endif
